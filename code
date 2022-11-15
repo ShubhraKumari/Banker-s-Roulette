@@ -1,0 +1,14 @@
+import random
+
+# Split string method
+names = input("Enter the names, separated by a comma. ")
+name = names.split(", ")
+
+#Get the total number of items in list.
+items = len(name)
+#Generate random numbers between 0 and the last index. 
+num = random.randint(0, items - 1)
+#Pick out random person from list of names using the random number.
+pay = name[num]
+
+print(pay + " is going to buy the meal today!")
